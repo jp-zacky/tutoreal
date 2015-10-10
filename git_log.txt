@@ -1,18 +1,17 @@
 Previous HEAD position was 37258c4... uwaaaaaaa
 HEAD is now at a6a2ff9... uwaaaaaaa2
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
+zacky@pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
 $ ls
 pmob.txt
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
+zacky@pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
 $ cat pmob.txt
 shamison
-hshs
-y@yuya-pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
+
 $ git remote add origin https://github.com/jp-zacky/tutoreal.git
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
+zacky@pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
 $ git push -u origin master
 Counting objects: 6, done.
 Delta compression using up to 4 threads.
@@ -23,30 +22,30 @@ To https://github.com/jp-zacky/tutoreal.git
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
+zacky@pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
 $ git add key.txt
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
+zacky@pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
 $ ls -a
 ./  ../  .git/  key.txt  pmob.txt
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
+zacky@pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
 $ notepad .gitignore
 dos2unix: .gitignore MODE 0100644  (regular file)
 dos2unix: using ./d2utmpI3b9Y2 as temporary file
 dos2unix: converting file .gitignore to Unix format...
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
+zacky@pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
 $ git add .gitignore key.txt
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
+zacky@pc MINGW64 ~/Documents/tutorial ((a6a2ff9...))
 $ git commit -m "gitgnore"
 [detached HEAD 398484d] gitgnore
  2 files changed, 2 insertions(+)
  create mode 100644 .gitignore
  create mode 100644 key.txt
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((398484d...))
+zacky@pc MINGW64 ~/Documents/tutorial ((398484d...))
 $ git push
 warning: push.default is unset; its implicit value has changed in
 Git 2.0 from 'matching' to 'simple'. To squelch this message
@@ -76,32 +75,32 @@ state now, use
     git push origin HEAD:<name-of-remote-branch>
 
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((398484d...))
+zacky@pc MINGW64 ~/Documents/tutorial ((398484d...))
 $ git statuss
 git: 'statuss' is not a git command. See 'git --help'.
 
 Did you mean this?
         status
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((398484d...))
+zacky@pc MINGW64 ~/Documents/tutorial ((398484d...))
 $ git status
 HEAD detached from a6a2ff9
 nothing to commit, working directory clean
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((398484d...))
+zacky@pc MINGW64 ~/Documents/tutorial ((398484d...))
 $ git remote -v
 origin  https://github.com/jp-zacky/tutoreal.git (fetch)
 origin  https://github.com/jp-zacky/tutoreal.git (push)
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((398484d...))
+zacky@pc MINGW64 ~/Documents/tutorial ((398484d...))
 $ git branch -v
 * (HEAD detached from a6a2ff9) 398484d gitgnore
   master                       a6a2ff9 uwaaaaaaa2
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((398484d...))
+zacky@pc MINGW64 ~/Documents/tutorial ((398484d...))
 $
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((398484d...))
+zacky@pc MINGW64 ~/Documents/tutorial ((398484d...))
 $ git push origin 398484d:master
 Counting objects: 4, done.
 Delta compression using up to 4 threads.
@@ -111,23 +110,23 @@ Total 4 (delta 0), reused 0 (delta 0)
 To https://github.com/jp-zacky/tutoreal.git
    a6a2ff9..398484d  398484d -> master
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((398484d...))
+zacky@pc MINGW64 ~/Documents/tutorial ((398484d...))
 $ git checkout master
 HEAD            master          origin/master
 
-y@yuya-pc MINGW64 ~/Documents/tutorial ((398484d...))
+zacky@pc MINGW64 ~/Documents/tutorial ((398484d...))
 $ git checkout master
 Previous HEAD position was 398484d... gitgnore
 Switched to branch 'master'
 Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
   (use "git pull" to update your local branch)
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ git remote -v
 origin  https://github.com/jp-zacky/tutoreal.git (fetch)
 origin  https://github.com/jp-zacky/tutoreal.git (push)
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ git pull
 Updating a6a2ff9..398484d
 Fast-forward
@@ -137,21 +136,21 @@ Fast-forward
  create mode 100644 .gitignore
  create mode 100644 key.txt
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ ls
 key.txt  pmob.txt
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ ls -a
 ./  ../  .git/  .gitignore  key.txt  pmob.txt
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ cat .gitignore
 key.txt
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ vi key.txt
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
@@ -163,15 +162,15 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ git rm --cached key.txt
 rm 'key.txt'
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ ls
 key.txt  pmob.txt
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
@@ -181,27 +180,27 @@ Changes to be committed:
         deleted:    key.txt
 
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ git commit -m 'foo'
 [master d6120da] foo
  1 file changed, 1 deletion(-)
  delete mode 100644 key.txt
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ ls
 key.txt  pmob.txt
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ git status
 On branch master
 Your branch is ahead of 'origin/master' by 1 commit.
   (use "git push" to publish your local commits)
 nothing to commit, working directory clean
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ vi .gitignore
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ git status
 On branch master
 Your branch is ahead of 'origin/master' by 1 commit.
@@ -219,10 +218,10 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ vi .gitignore
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ git status
 On branch master
 Your branch is ahead of 'origin/master' by 1 commit.
@@ -235,7 +234,7 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ git commit -m 'cashed'
 On branch master
 Your branch is ahead of 'origin/master' by 1 commit.
@@ -245,12 +244,12 @@ Changes not staged for commit:
 
 no changes added to commit
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ git add .gitignore
 warning: LF will be replaced by CRLF in .gitignore.
 The file will have its original line endings in your working directory.
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ git commit -m 'cashed'
 [master warning: LF will be replaced by CRLF in .gitignore.
 The file will have its original line endings in your working directory.
@@ -259,7 +258,7 @@ warning: LF will be replaced by CRLF in .gitignore.
 The file will have its original line endings in your working directory.
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ git push
 warning: push.default is unset; its implicit value has changed in
 Git 2.0 from 'matching' to 'simple'. To squelch this message
@@ -290,9 +289,9 @@ Total 5 (delta 0), reused 0 (delta 0)
 To https://github.com/jp-zacky/tutoreal.git
    398484d..1d37296  master -> master
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $ emacs
 bash: emacs: command not found
 
-y@yuya-pc MINGW64 ~/Documents/tutorial (master)
+zacky@pc MINGW64 ~/Documents/tutorial (master)
 $
